@@ -1,0 +1,14 @@
+<svg id="b0fd04ee-1746-476f-9176-b8a60fc5a69d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.81 79.24">
+  <defs>
+    <linearGradient id="8cae099c-355b-468a-9417-b3324f48f5db" x1="65.18" y1="447.22" x2="149.41" y2="447.22" gradientTransform="translate(-49.6 -410.75)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.25" stop-color="#2d4059"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="6f8de71f-d424-49e8-a080-04654fc26a12" x1="133.83" y1="453.52" x2="49.6" y2="453.52" xlink:href="#8cae099c-355b-468a-9417-b3324f48f5db"/>
+  </defs>
+  <title>grey-logo</title>
+  <g>
+    <polygon points="57.7 0 99.81 72.94 15.58 72.94 57.7 0" style="fill: url(#8cae099c-355b-468a-9417-b3324f48f5db)"/>
+    <polygon points="42.12 6.29 84.23 79.24 0 79.24 42.12 6.29" style="fill: url(#6f8de71f-d424-49e8-a080-04654fc26a12)"/>
+  </g>
+</svg>

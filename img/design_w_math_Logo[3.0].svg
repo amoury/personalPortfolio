@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.81 79.24">
+  <defs>
+    <linearGradient id="a" x1="-87.82" y1="471.65" x2="-3.59" y2="471.65" gradientTransform="translate(103.4 -435.18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.25" stop-color="#fde9c9"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b" x1="-19.17" y1="477.94" x2="-103.4" y2="477.94" xlink:href="#a"/>
+  </defs>
+  <title>design_w_math_Logo[3.0]</title>
+  <path d="M218.34,529.64" transform="translate(-138 -471.2)" style="fill: none;stroke: aqua;stroke-miterlimit: 10;stroke-width: 0.5px"/>
+  <polygon points="57.7 0 99.81 72.94 15.58 72.94 57.7 0" style="fill: url(#a)"/>
+  <polygon points="42.12 6.29 84.23 79.24 0 79.24 42.12 6.29" style="fill: url(#b)"/>
+</svg>

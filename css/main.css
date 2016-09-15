@@ -1,0 +1,112 @@
+/* ====================================================
+MIXINS
+======================================================= */
+/* ====================================================
+VARIABLES
+======================================================= */
+/* ====================================================
+AUTHOR STYLES
+======================================================= */
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  max-height: 100vh;
+  -webkit-perspective: 1000;
+  perspective: 1000; }
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; }
+
+.img-responsive {
+  width: 100%; }
+
+/* == Main section == */
+#main-logo {
+  max-width: 200px; }
+
+#home {
+  text-align: center;
+  background: #2D4059; }
+  #home h1 {
+    font-size: 8vw;
+    color: #fff;
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+    letter-spacing: 1vw; }
+    @media (max-width: 375px) {
+      #home h1 {
+        font-size: 30px; } }
+  #home ul {
+    font-size: 3vw;
+    margin: auto auto;
+    width: 33%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0; }
+    @media (max-width: 666.66667px) {
+      #home ul {
+        font-size: 20px; } }
+    #home ul li {
+      margin-top: 24px;
+      color: #EA5455;
+      font-family: "courier-prime", monospace; }
+      #home ul li a {
+        text-decoration: none;
+        line-height: 1.2em;
+        color: #EA5455; }
+
+.orange-slash {
+  color: #EA5455; }
+
+.seperator-dot {
+  display: none; }
+
+/* == Portfolio section == */
+#portfolio {
+  background: #FDE9C9;
+  max-height: 100vh;
+  overflow: hidden; }
+
+.secondary-logo {
+  width: 15vh; }
+
+.img-wrapper {
+  max-width: 80vw;
+  margin-top: 20vh; }
+  .img-wrapper img {
+    width: 100%; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%; }
+
+#previous {
+  position: absolute;
+  left: 0;
+  top: 50%; }
+
+/* ====================================================
+MEDIA QUERIES
+======================================================= */
+@media screen and (min-width: 768px) {
+  #home ul {
+    flex-direction: row; }
+
+  .seperator-dot {
+    display: inline-block; }
+
+  .img-wrapper {
+    width: 60vw;
+    margin-top: 0; } }
+
+/*# sourceMappingURL=main.css.map */
