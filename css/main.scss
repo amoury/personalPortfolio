@@ -106,7 +106,14 @@ Project Gallery
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-	background: #F4F1BB;
+}
+
+#portfolio01 {
+  background: #F4F1BB;
+}
+
+#portfolio02 {
+  background: $blue-color;
 }
 
 .project-box {
@@ -119,6 +126,9 @@ Project Gallery
 	background-size: cover;
 	position: absolute;
 	display: table;
+  -webkit-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
+  box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
 	
 }
 
@@ -137,23 +147,25 @@ Project Gallery
 }
 
 
-.project-info {
-	visibility: hidden;
-	display: table-cell;
-	vertical-align: middle;
-	z-index: 2;
-	background-color: rgba(255,255,255,0.4);
-	
-	i {
-		font-size: 3em;
-		text-align: center;
-		color: #fff;
-		display: block;   
-	}
+.more-info-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  background: $orange-color;
+  
+  i {
+    padding: 12px 15px;
+    text-align: center;
+  }
+}
 
-	&:hover{
-		visibility: visible;
-	}
+.scrollmagic-pin-spacer {
+  position: absolute !important;
+  clip: rect(auto, auto, auto, auto);
 }
 
 /* ====================================================
@@ -161,6 +173,10 @@ MEDIA QUERIES
 ======================================================= */
 
 @media screen and (min-width: 768px) {
+
+  .project-box {
+    transform: translate(-50%, -50%);
+  }
 
 	.section-title {
 		top: 50%;

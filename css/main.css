@@ -59,8 +59,13 @@ Project Gallery
 .project-gallery {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: relative; }
+
+#portfolio01 {
   background: #F4F1BB; }
+
+#portfolio02 {
+  background: #2D4059; }
 
 .project-box {
   top: 50%;
@@ -71,7 +76,10 @@ Project Gallery
   background: url("../img/project-1.jpg") no-repeat center;
   background-size: cover;
   position: absolute;
-  display: table; }
+  display: table;
+  -webkit-box-shadow: 10px 10px 75px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 10px 10px 75px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 10px 10px 75px 0px rgba(0, 0, 0, 0.39); }
 
 .section-title {
   position: absolute;
@@ -83,24 +91,30 @@ Project Gallery
     text-transform: uppercase;
     font-family: "courier-prime", monospace; }
 
-.project-info {
-  visibility: hidden;
-  display: table-cell;
-  vertical-align: middle;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.4); }
-  .project-info i {
-    font-size: 3em;
-    text-align: center;
-    color: #fff;
-    display: block; }
-  .project-info:hover {
-    visibility: visible; }
+.more-info-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  background: #EA5455; }
+  .more-info-btn i {
+    padding: 12px 15px;
+    text-align: center; }
+
+.scrollmagic-pin-spacer {
+  position: absolute !important;
+  clip: rect(auto, auto, auto, auto); }
 
 /* ====================================================
 MEDIA QUERIES
 ======================================================= */
 @media screen and (min-width: 768px) {
+  .project-box {
+    transform: translate(-50%, -50%); }
+
   .section-title {
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);

@@ -7,7 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -19,75 +20,62 @@
     <body>
         
 
-        <section id="home" class="section">
-            <div class="centered-content">
-                <svg id="main-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.81 79.24">
-                  <defs>
-                    <linearGradient id="a" x1="-87.82" y1="471.65" x2="-3.59" y2="471.65" gradientTransform="translate(103.4 -435.18)" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.25" stop-color="#fde9c9"/>
-                      <stop offset="1" stop-color="#fff"/>
-                    </linearGradient>
-                    <linearGradient id="b" x1="-19.17" y1="477.94" x2="-103.4" y2="477.94" xlink:href="#a"/>
-                  </defs>
-                  <title>Main Logo</title>
-                  <path d="M218.34,529.64" transform="translate(-138 -471.2)" style="fill: none;stroke: aqua;stroke-miterlimit: 10;stroke-width: 0.5px"/>
-                  <polygon points="57.7 0 99.81 72.94 15.58 72.94 57.7 0" style="fill: url(#a)"/>
-                  <polygon points="42.12 6.29 84.23 79.24 0 79.24 42.12 6.29" style="fill: url(#b)"/>
+<!-- Header Section -->
+    <section id="main-section">
+        <div id="particles-js">
+            <div class="centered-box">
+                <svg id="main-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.3 120.64">
+                  <title>cool-logo</title>
+                  <g>
+                    <polygon points="69.65 10.32 112.95 85.32 26.35 85.32 69.65 10.32" style="fill: #E6EBE0"/>
+                    <polygon points="69.65 10.32 112.95 35.32 112.95 85.32 69.65 110.32 26.35 85.32 26.35 35.32 69.65 10.32" style="fill: none;stroke: #E6EBE0;stroke-miterlimit: 100"/>
+                    <polygon points="104.12 0.62 138.59 60.32 104.12 120.02 35.18 120.02 0.72 60.32 35.18 0.62 104.12 0.62" style="fill: none;stroke: #E6EBE0;stroke-miterlimit: 10"/>
+                    <polygon points="104.12 0.62 69.65 10.32 35.18 0.62 26.35 35.32 0.72 60.32 26.35 85.32 35.18 120.02 69.65 110.32 104.12 120.02 112.95 85.32 138.59 60.32 112.95 35.32 104.12 0.62" style="fill: none;stroke: #E6EBE0;stroke-miterlimit: 10"/>
+                  </g>
                 </svg>
 
-                <h1 class="site-heading">Design W <span class="orange-slash">/</span> Math </h1>
+                <div class="main-title">
+                    <h1>Design W <span class="orange-slash">/</span> Math</h1>
+                </div>
 
-                <ul class="home-nav">
-                    <li><a href="#">About</a></li>
-                    <li><span class="seperator-dot">.</span></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><span class="seperator-dot">.</span></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
             </div>
-        </section>
+        </div> 
+    </section>
+        
 
-        <section id="portfolio" class="section">
-            <div class="row">
+<!-- Porfolio Section -->
+    
+    <section class="project-gallery" id="portfolio01">
 
-                <div class="secondary-logo">
-                    <svg id="dd40268e-0248-4eab-abfe-bd3a2b3477b9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.81 79.24">
-                      <defs>
-                        <linearGradient id="534774c7-8047-4b16-90f4-b16fe7d88102" x1="65.18" y1="447.22" x2="149.41" y2="447.22" gradientTransform="translate(-49.6 -410.75)" gradientUnits="userSpaceOnUse">
-                          <stop offset="0.25" stop-color="#2d4059"/>
-                          <stop offset="1" stop-color="#fff"/>
-                        </linearGradient>
-                        <linearGradient id="6db5ec73-e296-4979-b54c-0c0721e0f3cf" x1="133.83" y1="453.52" x2="49.6" y2="453.52" xlink:href="#534774c7-8047-4b16-90f4-b16fe7d88102"/>
-                      </defs>
-                      <title>grey-logo</title>
-                      <g>
-                        <polygon points="57.7 0 99.81 72.94 15.58 72.94 57.7 0" style="fill: url(#534774c7-8047-4b16-90f4-b16fe7d88102)"/>
-                        <polygon points="42.12 6.29 84.23 79.24 0 79.24 42.12 6.29" style="fill: url(#6db5ec73-e296-4979-b54c-0c0721e0f3cf)"/>
-                      </g>
-                    </svg>
-                </div>
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+        <article class="project-box">
+            <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        </article>
 
-                <div class="section-heading">
-                    <h2>Portfolio <span class="orange-slash">/</span></h2>
-                </div>
-            
-                <div class="img-wrapper">
-                    <img class="img-responsive" src="https://unsplash.it/1000/600/?random" alt="">
-                </div>
+    </section>
 
-                <div id="previous">
-                    <p>Previous</p>
-                </div>
+    <section class="project-gallery" id="portfolio02">
 
-                <div id="next">
-                    <p>Next</p>
-                </div>
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+        <article class="project-box">
+            <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+        </article>
 
-             </div><!-- /.row -->
-        </section>
+    </section>
+        
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/vendor.js"></script>
 
         <script src="js/main.js"></script>
 
