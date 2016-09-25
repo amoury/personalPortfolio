@@ -34,6 +34,7 @@ VARIABLES
 $orange-color: #EA5455;
 $blue-color: #2D4059;
 $offwhite-color: #FDE9C9;
+$platinum-color: #E6EBE0;
 $courier: "courier-prime",monospace;
 $brandon: "brandon-grotesque",sans-serif;
 
@@ -47,6 +48,157 @@ AUTHOR STYLES
 NAVIGATION
 ======================================================= */
 
+// .button_container {
+//   position: fixed;
+//   top: 5%;
+//   right: 5%;
+//   height: 27px;
+//   width: 35px;
+//   cursor: pointer;
+//   z-index: 100;
+//   transition: opacity .25s ease;
+  
+//   &:hover {
+//     opacity: .7;
+//   }
+  
+//   &.active {
+//     .top {
+//       transform: translateY(11px) translateX(0) rotate(45deg);
+//       background: $blue-color;
+//     }
+//     .middle {
+//       opacity: 0;
+//       background: $blue-color;
+//     }
+    
+//     .bottom {
+//       transform: translateY(-11px) translateX(0) rotate(-45deg);
+//       background: $blue-color;
+//     }
+//   }
+  
+//   span {
+//   background: $orange-color;
+//   border: none;
+//   height: 5px;
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   transition:  all .35s ease;
+//   cursor: pointer;
+    
+//     &:nth-of-type(2) {
+//       top: 11px;
+//     }
+    
+//     &:nth-of-type(3) {
+//       top: 22px;
+//     }
+//   }
+// }
+
+
+// .overlay {
+//   position: fixed;
+//   background: $orange-color;
+//   top: 0;
+//   left: 0;
+//   z-index: 10;
+//   width: 100%;
+//   height: 0%;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: opacity .35s, visibility .35s, height .35s;
+//   overflow: hidden;
+  
+//   &.open {
+//     opacity: .9;
+//     visibility: visible;
+//     height: 100%;
+    
+//     li {
+//       animation: fadeInRight .5s ease forwards;
+//       animation-delay: .35s;
+      
+//       &:nth-of-type(2) {
+//         animation-delay: .4s;
+//       }
+//       &:nth-of-type(3) {
+//         animation-delay: .45s;
+//       }
+//       &:nth-of-type(4) {
+//         animation-delay: .50s;
+//       }
+//     }
+//   }
+//   nav {
+//     position: relative;
+//     height: 70%;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     font-size: 50px;
+//     font-family: $courier;
+//     font-weight: 400;
+//     text-align: center;
+//   }
+//   ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0 auto;
+//     display: inline-block;
+//     position: relative;
+//     height: 100%; 
+    
+//     li {
+//       display: block;
+//       height: 25%;
+//       height: calc(100% / 4);
+//       min-height: 50px;
+//       position: relative;
+//       opacity: 0;
+      
+//       a {
+//         display: block;
+//         position: relative;
+//         color: #fff;
+//         text-decoration: none;
+//         overflow: hidden;
+        
+//         &:hover:after,
+//          &:focus:after,
+//          &:active:after {
+//            width: 100%;
+//          }
+        
+//         &:after {
+//           content: '';
+//           position: absolute;
+//           bottom: 0;
+//           left: 50%;
+//           width: 0%;
+//           transform: translateX(-50%);
+//           height: 3px;
+//           background: #fff;
+//           transition: .35s;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @keyframes fadeInRight {
+//   0% {
+//     opacity: 0;
+//     left: 20%;
+//   }
+//   100% {
+//     opacity: 1;
+//     left: 0;
+//   }
+// }
+
 
 
 
@@ -55,15 +207,25 @@ NAVIGATION
 CANVAS
 ======================================================= */
 
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 canvas{ display: block; vertical-align: bottom; }
 #particles-js { 
   position:relative; 
   width: 100vw; 
-  height: 100vh; 
+  height: 100vh;
   background: linear-gradient(302deg, #9bc1bc, #5ca4a9); /*#F4F1BB*/
-
 }
 
+
+
+.hidden {
+  display: none; 
+  opacity: 0; 
+}
 
 .centered-box {
   position: absolute;
@@ -106,6 +268,12 @@ Project Gallery
 	width: 100vw;
 	height: 100vh;
 	position: relative;
+  overflow: hidden;
+}
+
+.pin-wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 #portfolio01 {
@@ -114,7 +282,25 @@ Project Gallery
 
 #portfolio02 {
   background: $blue-color;
+  
+  .pin-wrapper {
+    transform: translateY(-100%);
+  }
 }
+
+#portfolio03 {
+  background: $platinum-color;
+  
+  .pin-wrapper {
+    transform: translateY(-100%);
+  }
+}
+
+.scrollmagic-pin-spacer {
+    position: absolute !important;
+    clip: rect(auto, auto, auto, auto);
+    
+} 
 
 .project-box {
 	top: 50%;
@@ -122,16 +308,28 @@ Project Gallery
 	transform: translate(-50%, -45%);
 	width: 80%;
 	height: 80%;
-	background:url("../img/project-1.jpg") no-repeat center;
 	background-size: cover;
 	position: absolute;
-	display: table;
   -webkit-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
   -moz-box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
   box-shadow: 10px 10px 75px 0px rgba(0,0,0,0.39);
 	
 }
 
+#project-img01 {
+  background:url("../img/gastrolab-mobile.png") no-repeat center;
+  background-size: cover;
+}
+
+#project-img02 {
+  background:url("../img/project-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#project-img03 {
+  background:url("../img/project-1.jpg") no-repeat center;
+  background-size: cover;
+}
 
 .section-title {
 	position: absolute;
@@ -142,20 +340,39 @@ Project Gallery
     h2 {
     	text-align: center;
     	text-transform: uppercase;
-    	font-family: $courier; 
+    	font-family: $courier;
+      @include responsive-font(2vw, 20px); 
     }
 }
 
+.info-overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 
-.more-info-btn {
+.more-info-btn,
+.info-btn,
+.link-btn {
   position: absolute;
   color: #fff;
   font-size: 2em;
-  bottom: -5%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
   background: $orange-color;
+  
+  a {
+    color: #fff;
+  }
+}
+
+
+.more-info-btn {
+  bottom: -5%;
   
   i {
     padding: 12px 15px;
@@ -163,16 +380,89 @@ Project Gallery
   }
 }
 
-.scrollmagic-pin-spacer {
-  position: absolute !important;
-  clip: rect(auto, auto, auto, auto);
+.info-btn {
+  top: 80%; 
+  
+  i {
+    padding: 11px 21px;
+    text-align: center;
+  }
+  
 }
+
+.link-btn {
+  top: 65%;
+  
+  i {
+    padding: 12px 13px;
+    text-align: center;
+  }
+  
+}
+
+.project-name {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  h3 {
+    font-family: $brandon;
+    text-transform: uppercase;
+    @include responsive-font(3vw, 30px);
+    letter-spacing: 2px;
+    text-align: center;  
+  }
+  
+}
+
+
+/* ====================================================
+About Section
+======================================================= */
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.about-desc {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $brandon;
+  @include responsive-font(1.5em,18px);
+}
+
+
+/* ====================================================
+Footer Section
+======================================================= */
+
+footer {
+  background: linear-gradient(302deg, #9bc1bc, #5ca4a9);
+  padding: 3em;
+}
+
 
 /* ====================================================
 MEDIA QUERIES
 ======================================================= */
 
 @media screen and (min-width: 768px) {
+
+  /* == NAV == */
+  
+  .overlay-menu {
+    
+  }
+
+  /* == PORTFOLIO SECTION == */
 
   .project-box {
     transform: translate(-50%, -50%);
@@ -183,6 +473,11 @@ MEDIA QUERIES
 		transform: rotate(-90deg) translateY(-50%);
 		left: 0vh;
 	}
+
+  #project-img01 {
+    background:url("../img/gastrolab.png") no-repeat center;
+    background-size: cover;
+  }
 }
 
 
