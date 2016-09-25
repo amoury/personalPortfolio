@@ -23,7 +23,26 @@
 <!-- Header Section -->
     <section id="main-section">
         <div id="particles-js">
-            <div class="centered-box">
+            
+            <!-- Navigation -->
+
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div><!-- /.button_container -->
+
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio01">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /.overlay --> 
+
+             <div class="centered-box">
                 <svg id="main-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.3 120.64">
                   <title>cool-logo</title>
                   <g>
@@ -41,32 +60,91 @@
             </div>
         </div> 
     </section>
-        
+
+
+<!-- About Section -->
+
+    <section id="about">
+        <div class="pin-wrapper">
+            <div class="section-title">
+                <h2>About <span class="orange-slash">/</span></h2>
+            </div>
+            <div class="about-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi omnis harum, distinctio necessitatibus. Perspiciatis doloribus illo quis amet? Autem voluptates est, repudiandae dicta minima quibusdam quidem suscipit ipsa a sapiente?</p>
+            </div>
+        </div>
+    </section>
+
 
 <!-- Porfolio Section -->
     
     <section class="project-gallery" id="portfolio01">
 
-        <div class="section-title">
-            <h2>Portfolio</h2>
+        <div class="pin-wrapper">
+            <div class="section-title">
+                <h2>Portfolio <span class="orange-slash">/</span></h2>
+            </div>
+            <article class="project-box" id="project-img01">
+                <div class="info-overlay hidden">
+                    <div class="project-name"><h3>Gastrolab</h3></div>
+                    <div class="link-btn">
+                        <a href="http://gastrolab.xyz/" target="_blank">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="info-btn"><i class="fa fa-info" aria-hidden="true"></i></div>
+                </div>
+                <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            </article>
         </div>
-        <article class="project-box">
-            <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
-        </article>
-
     </section>
 
     <section class="project-gallery" id="portfolio02">
 
-        <div class="section-title">
-            <h2>Portfolio</h2>
+        <div class="pin-wrapper">
+            <div class="section-title">
+                <h2>Portfolio <span class="orange-slash">/</span></h2>
+            </div>
+            <article class="project-box" id="project-img02">
+                <div class="info-overlay hidden">
+                    <div class="project-name"><h3>CAPITAL ENGINEERING</h3></div>
+                    <div class="link-btn"><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div class="info-btn"><i class="fa fa-info" aria-hidden="true"></i></div>
+                </div>
+                <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            </article>
         </div>
-        <article class="project-box">
-            <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
-        </article>
-
     </section>
-        
+    
+     <section class="project-gallery" id="portfolio03">
+
+        <div class="pin-wrapper">
+            <div class="section-title">
+                <h2>Portfolio <span class="orange-slash">/</span></h2>
+            </div>
+            <article class="project-box" id="project-img03">
+                <div class="info-overlay hidden">
+                    <div class="project-name"><h3>Al Falah</h3></div>
+                    <div class="link-btn"><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div class="info-btn"><i class="fa fa-info" aria-hidden="true"></i></div>
+                </div>
+                <div class="more-info-btn"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            </article>
+        </div>
+    </section>
+
+
+<!-- CONTACT FORM -->
+
+
+
+<!-- FOOTER -->
+    
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ad sapiente omnis beatae, rerum recusandae id, in dolorum voluptate quasi culpa voluptatibus ex ducimus? Ut adipisci repellat doloremque facilis aperiam.</p>
+    </footer>
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
