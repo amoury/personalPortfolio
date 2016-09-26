@@ -1,0 +1,99 @@
+	.hide {
+		height: 0%;
+	   	opacity: 0;
+	   	visibility: hidden;
+	}
+
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease; 
+ }
+  .button_container:hover {
+    opacity: .7; 
+   }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #2D4059; 
+   }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #2D4059; 
+   }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #2D4059; }
+  .button_container span {
+    background: #EA5455;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+    .button_container span:nth-of-type(2) {
+      top: 11px; }
+    .button_container span:nth-of-type(3) {
+      top: 22px; }
+
+
+
+  	
+/******************************************************/
+	
+	.overlay {
+		background: #EA5455;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.overlay-menu > ul {
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+	}
+	
+	.overlay-menu > ul > li {
+       display: block;
+       height: 33.3%;
+       min-height: 50px;
+       position: relative;
+	   opacity: 1;
+	   
+	}
+
+	.overlay-menu > ul > li > a {
+       display: block;
+       position: relative;
+       color: #000;
+       text-decoration: none;
+       overflow: hidden;
+       font-family: "courier-prime",monospace;
+       font-size: 4em;
+	   
+	}
+
+
+
+@media screen and (min-width: 768px) {
+	
+
+	.overlay-menu > ul > li {
+		display: inline-block;
+	}
+
+	.overlay-menu > ul > li > a {
+		font-family: "courier-prime",monospace;
+		margin: 10px;
+		font-size: 1em;
+	}
+
+}

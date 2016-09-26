@@ -11,26 +11,22 @@ $(document).ready(function() {
 
 
 // Hamburger Menu
-
-
 $('#toggle').click(function() {
 	$(this).toggleClass('active');
    	$('#overlay').toggleClass('open');
 });
 
-// Project Info Button
 
+// Project Info Button
 $('.more-info-btn').on('click', function() {
 	$(this).siblings('.info-overlay').toggleClass('hidden');
 });
 
 
-
 // Init ScrollMagic
 var controller = new ScrollMagic.Controller();
 
-// About scene - Pin the About Section
-
+// 'About' scene - Pin the About Section
 var aboutScene = new ScrollMagic.Scene({
 	triggerElement: '#about',
 	triggerHook: 0,

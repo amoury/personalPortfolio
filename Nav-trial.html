@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/trial.css">
+
+        <script src="https://use.typekit.net/upk8cnv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+            .icon-bar { background: #000; }
+            button { position: fixed; }
+
+            @media screen and (min-width: 768px) { .button_container { display: none; opacity: hidden } }
+        </style>
+    </head>
+    <body>
+
+<!-- NAVIGATION -->
+<!-- 
+<nav>
+  
+    
+      <button type="button" class="button_container" data-toggle="collapse" data-target="#collapsed-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+ 
+
+    Collect the nav links, forms, and other content for toggling
+    <div class="collapse navbar-collapse overlay" id="collapsed-nav">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  
+<!-- </nav> -->
+
+
+
+
+
+
+
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div><!-- /.button_container -->
+
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio01">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /.overlay --> 
+
+
+
+
+
+<!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script>
+
+            // Button container for the Hamburger button 
+                  
+                    
+            $('#toggle').on('click',function() {
+                $(this).toggleClass('active');
+                $('#overlay').toggleClass('hide');
+            });
+
+        // This Function checks the size of the screen and add/removes class accordingly.
+
+            var screenWidthCheck = function(screenWidth){
+               if(screenWidth <= 768) {
+                    $('#overlay').addClass('hide');
+                } else if (screenWidth > 768) {
+                    $('#overlay').removeClass('hide'); 
+                } 
+            }
+
+
+            var screenWidth = $(window).width();
+            screenWidthCheck(screenWidth); // Function is invoked initially
+
+
+
+            $(window).on('resize', function() {
+                screenWidth = $(window).width();
+                if($('#toggle').hasClass('active')) {
+                    $('#overlay').removeClass('hide');
+                } else {
+                    $('#overlay').addClass('hide');
+                }   
+                screenWidthCheck(screenWidth); // Function is invoked again at the time of Viewport resize
+
+            });
+
+
+
+            
+                    
+    
+ 
+        </script>
+
+        
+        <script src="js/vendor/bootstrap.min.js"></script>
+        
+
+        
+
+      
+    </body>
+</html>
