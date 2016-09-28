@@ -23,6 +23,13 @@ $('.more-info-btn').on('click', function() {
 });
 
 
+// Contact form
+
+$(function() {
+    $('.infield-label').infieldLabel();
+  });
+
+
 // Init ScrollMagic
 var controller = new ScrollMagic.Controller();
 

@@ -138,7 +138,7 @@ canvas {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(302deg, #9bc1bc, #5ca4a9);
+  background: linear-gradient(302deg, #2D4059, #5ca4a9);
   /*#F4F1BB*/ }
 
 .hidden {
@@ -188,7 +188,7 @@ Project Gallery
   height: 100%; }
 
 #portfolio01 {
-  background: #F4F1BB; }
+  background: #FFFFEA; }
 
 #portfolio02 {
   background: #2D4059; }
@@ -196,7 +196,7 @@ Project Gallery
     transform: translateY(-100%); }
 
 #portfolio03 {
-  background: #E6EBE0; }
+  background: #FFFFEA; }
   #portfolio03 .pin-wrapper {
     transform: translateY(-100%); }
 
@@ -259,7 +259,12 @@ Project Gallery
   left: 50%;
   transform: translateX(-50%);
   border-radius: 100%;
-  background: #EA5455; }
+  background: #EA5455;
+  transition: background 0.4s ease-in-out; }
+  .more-info-btn:hover,
+  .info-btn:hover,
+  .link-btn:hover {
+    background: #2D4059; }
   .more-info-btn a,
   .info-btn a,
   .link-btn a {
@@ -306,7 +311,8 @@ About Section
 #about {
   width: 100vw;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background: #FFFFEA; }
 
 .about-desc {
   max-width: 50%;
@@ -321,11 +327,160 @@ About Section
       font-size: 18px; } }
 
 /* ====================================================
-Footer Section
+Contact Section
 ======================================================= */
-footer {
-  background: linear-gradient(302deg, #9bc1bc, #5ca4a9);
-  padding: 3em; }
+.on-dark {
+  color: #fff; }
+
+#contact {
+  background: linear-gradient(rgba(39, 92, 130, 0.5), rgba(0, 0, 0, 0.8)), url("../img/contact-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+
+.contact-box {
+  position: absolute;
+  height: 80%;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%); }
+
+.my-contact-box,
+.form-box {
+  position: absolute;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.my-contact-box {
+  top: 0;
+  background: rgba(234, 84, 85, 0.7); }
+  .my-contact-box h3 {
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF; }
+    @media (max-width: 1000px) {
+      .my-contact-box h3 {
+        font-size: 20px; } }
+  .my-contact-box p {
+    text-align: center;
+    font-family: "courier-prime", monospace;
+    color: #fff;
+    padding: 0 4%; }
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  background: rgba(45, 64, 89, 0.7); }
+
+form#contact-form {
+  border: 2px solid white;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); }
+
+input,
+textarea {
+  font-family: "courier-prime", monospace;
+  padding-left: 15px;
+  overflow: scroll; }
+
+input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 0;
+  background-color: transparent;
+  color: #fff; }
+
+textarea {
+  width: 99%;
+  max-width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff; }
+
+input.send-btn {
+  position: absolute;
+  border: none;
+  border-radius: 100%;
+  padding: 10px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  bottom: -13%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #EA5455;
+  transition: background 0.4s ease-in-out; }
+  input.send-btn:hover {
+    background: #2D4059; }
+
+::-webkit-input-placeholder {
+  color: #fff; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff; }
+
+:-ms-input-placeholder {
+  color: #fff; }
+
+.infield-label label {
+  color: transparent; }
+
+.placeholder-focus label {
+  color: #fff !important; }
+
+/* == Contact info == */
+.my-info {
+  margin-top: 5vw; }
+
+p.my-name,
+a.my-number,
+a.my-email {
+  color: #fff;
+  font-family: "brandon-grotesque", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: block;
+  margin: 5px 0; }
+
+a.my-email {
+  font-size: 0.2vw; }
+  @media (max-width: 6000px) {
+    a.my-email {
+      font-size: 12px; } }
+
+.social-icons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vw; }
+  @media (max-width: 750px) {
+    .social-icons {
+      font-size: 30px; } }
+  .social-icons a {
+    color: #fff;
+    transition: color 0.4s ease-in-out; }
+    .social-icons a:hover {
+      color: #2D4059; }
 
 /* ====================================================
 MEDIA QUERIES
@@ -342,6 +497,32 @@ MEDIA QUERIES
 
   #project-img01 {
     background: url("../img/gastrolab.png") no-repeat center;
-    background-size: cover; } }
+    background-size: cover; }
+
+  /* == CONTACT SECTION == */
+  .contact-box {
+    width: 70%; }
+
+  .my-contact-box,
+  .form-box {
+    top: 0;
+    width: 50%;
+    height: 100%; }
+
+  .my-contact-box {
+    left: 0; }
+
+  .form-box {
+    left: 50%; }
+
+  .my-info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  .social-icons {
+    position: absolute;
+    bottom: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
